@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace OnlineShopEF
+namespace OnlineShopEF.DAL
 {
     public class Order
     {
@@ -13,8 +13,8 @@ namespace OnlineShopEF
 
         public int CustomerID { get; set; }
 
-        public Customer Customer { get; set; }
+        public virtual Customer Customer { get; set; }
 
-        public List<OrderLine> OrderLines { get; set; }
+        public virtual List<OrderLine> OrderLines { get; set; }
     }
 }

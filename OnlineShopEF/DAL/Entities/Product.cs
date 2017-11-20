@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace OnlineShopEF
+namespace OnlineShopEF.DAL
 {
     public class Product
     {
@@ -13,6 +13,6 @@ namespace OnlineShopEF
 
         public int CategoryID { get; set; }
 
-        public Category Category { get; set; }
+        public virtual Category Category { get; set; }
     }
 }

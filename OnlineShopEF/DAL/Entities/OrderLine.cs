@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace OnlineShopEF
+namespace OnlineShopEF.DAL
 {
     public class OrderLine
     {
@@ -17,8 +17,8 @@ namespace OnlineShopEF
 
         public int Quantity { get; set; }
 
-        public Product Product { get; set; }
+        public virtual Product Product { get; set; }
 
-        public Order Order { get; set; }
+        public virtual Order Order { get; set; }
     }
 }

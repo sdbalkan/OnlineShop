@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data.Entity;
 
-namespace OnlineShopEF
+namespace OnlineShopEF.DAL
 {
     public class OnlineShopContext : DbContext
     {
