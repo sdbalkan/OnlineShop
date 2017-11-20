@@ -14,6 +14,7 @@ namespace OnlineShopEF.DAL
         public UnitOfWorkEF()
         {
             _dbContext = new OnlineShopContext();
+            _repositories = new Dictionary<string, object>();
         }
 
         public BaseRepository<T> Repository<T>() where T : class

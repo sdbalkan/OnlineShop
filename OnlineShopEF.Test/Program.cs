@@ -34,6 +34,8 @@ namespace OnlineShopEF.Test
 
                 uow.Save();
             }
+
+            Console.ReadKey();
         }
     }
 }
