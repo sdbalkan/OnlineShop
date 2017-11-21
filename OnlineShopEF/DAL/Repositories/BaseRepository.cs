@@ -40,15 +40,11 @@ namespace OnlineShopEF.DAL
 
         public void Delete(TEntity entity)
         {
-            if (_dbContext.Entry<TEntity>(entity).State != EntityState.Deleted)
-            {
-                _dbContext.Entry<TEntity>(entity).State = EntityState.Deleted;
-            }
-            else
+            if (_dbContext.Entry<TEntity>(entity).State == EntityState.Detached)
             {
                 _dbSet.Attach(entity);
-                _dbSet.Remove(entity);
             }
+            _dbSet.Remove(entity);
         }
 
         public void Delete(int id)

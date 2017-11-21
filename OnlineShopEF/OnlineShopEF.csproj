@@ -57,12 +57,29 @@
     <Compile Include="DAL\OnlineShopContext.cs" />
     <Compile Include="DAL\Entities\Order.cs" />
     <Compile Include="DAL\Entities\OrderLine.cs" />
+    <Compile Include="Migrations\201711201811159_InitialCreate.cs" />
+    <Compile Include="Migrations\201711201811159_InitialCreate.Designer.cs">
+      <DependentUpon>201711201811159_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711211128401_AddAnnotationsToCategory.cs" />
+    <Compile Include="Migrations\201711211128401_AddAnnotationsToCategory.Designer.cs">
+      <DependentUpon>201711211128401_AddAnnotationsToCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DAL\Entities\Product.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201711201811159_InitialCreate.resx">
+      <DependentUpon>201711201811159_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711211128401_AddAnnotationsToCategory.resx">
+      <DependentUpon>201711211128401_AddAnnotationsToCategory.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
